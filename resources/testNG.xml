@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <test name="Positive" >
+        <classes>
+            <class name="GoogleUI2priority">
+                <methods>
+                    <include name="SuccesfulFirstStep" />
+                    <include name="SuccesfulLoginSecondStep" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Negative" >
+        <classes>
+            <class name="GoogleUI2priority">
+                <methods>
+                    <include name="BadFirstStep" />
+                    <include name="BadLoginSecondStep" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
